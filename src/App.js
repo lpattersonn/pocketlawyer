@@ -17,11 +17,14 @@ function App() {
             </ul>
           </div>
         </nav>
+        
       </header>
 
       {/* Laywers online section*/}
       <section id="sidebar">
+        
         <p>The area is for showing lawyers online</p>
+
         {/* user first inital */}
         <article>{/* laywer image */}</article>
       </section>

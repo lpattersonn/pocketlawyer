@@ -40,8 +40,9 @@
 
 /* Nav */
  .nav {
-   position: absolute;
+   position: fixed;
    top: 0;
+   margin: 20px;
    width: 100%;
    display: flex;
      flex-direction: row;
