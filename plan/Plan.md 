@@ -1,0 +1,35 @@
+# Pocket Lawyer
+
+## User stories 
+
+### Home page
+  - As a user I can send a emergency request.
+  - As a user I can sign-in.
+  - As a user I can see my conversations.
+  - As a user I can explore the database. 
+
+### Conversation page
+  - As a user I can open conversations.
+
+### Message page
+  - As a user I can rate resolutions.
+  - As a user I can confirm resolutions.
+  - As a user I share results.
+
+### Result Page
+  - As a user I can see reviews.
+  - AS a user I can open questions and answers.
+  - As a user I can contact lawyer. 
+
+## Nouns
+- users
+- conversations
+- questions( answers as a column)
+- laywers
+
+## Component
+- App
+ - Header
+ - Lawyers
+   - LawyersList
+ - Main
