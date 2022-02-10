@@ -19,9 +19,9 @@ function App() {
         </nav>
         
       </header>
-
+      <body>
       {/* Laywers online section*/}
-      <section id="sidebar">
+      <section id="side-bar">
         
         <p>The area is for showing lawyers online</p>
 
@@ -41,7 +41,8 @@ function App() {
           <body></body>
         </div>
       </section>
-    </div>
+      </body>
+    </div> 
   );
 }
 
