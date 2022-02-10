@@ -4,7 +4,9 @@ function App() {
   return (
     <div className="App">
       {/* Header */}
+      
       <header>
+        <h1>Hello World</h1>
         <nav className="nav">
           <div>
             <h1>Pocket Lawyer</h1>
