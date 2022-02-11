@@ -4,14 +4,16 @@ export default function Header(props) {
   return (
     <header>
         <nav className="nav">
-          <div>
-            <h1>Pocket Lawyer</h1>
+          <div className="title">
+            <h1>
+            <span class="multicolortext">Pocket Lawyer</span>
+              </h1>
           </div>
           <div>
             <ul className="nav-list">
               <li>SOS</li>
               <li>Requests</li>
-              <li>Find Advce</li>
+              <li>Find Advice</li>
             </ul>
           </div>
         </nav>

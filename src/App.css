@@ -1,11 +1,34 @@
+body {
+  font-family: 'Bungee';
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+ 
+}
+
 /* Main */
 .App {
   text-align: center;
+  height: 100%;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.title{
+  font-family: 'Bungee', cursive;
+/* font-family: 'Shizuru', cursive; */
+font-size: 17px;
+}
+
+.multicolortext {
+  background-image: linear-gradient(to right, rgb(77, 155, 164), #1a62ff);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -42,7 +65,9 @@
 
 .nav {
    position: fixed;
-   border-bottom: 1px solid rgb(192, 192, 192);
+   border-bottom: none;
+   box-shadow:0 0 5px lightgray;
+   /* outline: gray solid 5px; */
    top: 0;
    padding-left: 3em;
    width: 100%;
@@ -73,17 +98,34 @@
 
 /* Sidebar */
 #side-bar {
-  height: 100%;
+  /* height: 100%; */
   width: 20%;
-  border: 1px solid grey;
+  height: 500px;
+  /* border: 1px solid grey; */
   overflow: auto;
   margin-top: 3em;
-  
+  /* max-height: 800px;
+  overflow-y: scroll;   */
 }
+
+#side-bar h1 {
+  margin-bottom: 0;
+}
+ 
+#side-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;  
+}
+#side-bar ul li {
+  padding-top: 20px;
+}
+
 
 /* Mainbody */
 .mainbody {
   width: 100%;
+  
   display: flex;
     justify-content: center;
   
@@ -96,14 +138,27 @@
 }
 
 .searchbar input{
-  width: 700px;
+  width: 60%;
   height: 35px;
+  border-radius: 30px;
+  padding-left: 50px;
+  border-width:0px;
+  border:none;
+  background-image: url("https://static.thenounproject.com/png/101791-200.png");
+  background-repeat: no-repeat;
+  background-position: 13px center;
+  background-size: 20px;  
+   outline: none;
 }
 
 .searchbar-div {
-  background-color: #61dafb;
+  color: antiquewhite;
+  border-radius: 25px;
+  background-image: linear-gradient(to bottom right, rgb(77, 155, 164), #1a62ff, #8b3dff);
+  /* background-color: #61dafb; */
   width: 100%;
-  height: 200px;
+  height: 50%;
   margin: 3em;
-
 }
+
+/* Lawyer button */

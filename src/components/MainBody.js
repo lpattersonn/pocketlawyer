@@ -5,8 +5,8 @@ export default function MainBody(props) {
     <section className="mainbody">
         <div className="searchbar-div">
           <form className="searchbar">
-            <p>This area is for the main body</p>
-            <input></input>
+            <h2>How can we help you?</h2>
+            <input placeholder="Search..."></input>
           </form>
         </div>
         <div>
