@@ -91,7 +91,7 @@ font-size: 17px;
  /* Body */
 .main {
   height: 100%;
-  padding-top: 50px;
+  padding-top: 70px;
   display: flex;
     flex-direction: row;
 }
