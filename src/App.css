@@ -57,6 +57,15 @@ nav {
    display: flex;
      flex-direction: row;
  }
+
+ /* Body */
+.main {
+  height: 100%;
+  padding-top: 50px;
+  display: flex;
+    flex-direction: row;
+}
+
 /* Sidebar */
 #side-bar {
   height: 700px;
@@ -69,12 +78,15 @@ nav {
 .mainbody {
   width: 400px;
   padding-left: 40px;
-
 }
 
-/* Body */
-body {
-  padding-top: 30px;
-  display: flex;
-    flex-direction: row;
+.searchbar {
+  
+  padding: 50px;
+  margin: 50px;
 }
+
+.searchbar input{
+  width: 700px;
+}
+

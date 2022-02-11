@@ -1,48 +1,24 @@
 import "./App.css";
 
+import Header from "./components/Header";
+
+import Lawyer from "./components/Lawyer";
+
+import MainBody from "./components/MainBody";
+
 function App() {
   return (
     <div className="App">
       {/* Header */}
+      <Header />
       
-      <header>
-        <nav className="nav">
-          <div>
-            <h1>Pocket Lawyer</h1>
-          </div>
-          <div>
-            <ul className="nav-list">
-              <li>SOS</li>
-              <li>Requests</li>
-              <li>Find Advce</li>
-            </ul>
-          </div>
-        </nav>
-        
-      </header>
-      <body>
+      <div class="main">
       {/* Laywers online section*/}
-      <section id="side-bar">
-        
-        <p>The area is for showing lawyers online</p>
-
-        {/* user first inital */}
-        <article>{/* laywer image */}</article>
-      </section>
+      <Lawyer />
 
       {/* This is the main section */}
-      <section className="mainbody">
-        <div>
-          <form>
-            <p>This area is for the main body</p>
-            <input></input>
-          </form>
-        </div>
-        <div>
-          <body></body>
-        </div>
-      </section>
-      </body>
+      <MainBody />
+      </div>
     </div> 
   );
 }
