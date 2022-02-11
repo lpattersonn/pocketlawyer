@@ -19,11 +19,14 @@ function App() {
             </ul>
           </div>
         </nav>
+        
       </header>
-
+      <body>
       {/* Laywers online section*/}
-      <section id="sidebar">
+      <section id="side-bar">
+        
         <p>The area is for showing lawyers online</p>
+
         {/* user first inital */}
         <article>{/* laywer image */}</article>
       </section>
@@ -40,7 +43,8 @@ function App() {
           <body></body>
         </div>
       </section>
-    </div>
+      </body>
+    </div> 
   );
 }
 

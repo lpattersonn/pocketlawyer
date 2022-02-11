@@ -39,9 +39,14 @@
 }
 
 /* Nav */
+nav {
+  background: #61dafb;
+}
  .nav {
-   position: absolute;
+   position: fixed;
    top: 0;
+   margin: 0px;
+   padding: 0px;
    width: 100%;
    display: flex;
      flex-direction: row;
@@ -53,5 +58,23 @@
      flex-direction: row;
  }
 /* Sidebar */
+#side-bar {
+  height: 700px;
+  width: 250px;
+  border: 1px solid grey;
+  overflow: auto;
+}
 
 /* Mainbody */
+.mainbody {
+  width: 400px;
+  padding-left: 40px;
+
+}
+
+/* Body */
+body {
+  padding-top: 30px;
+  display: flex;
+    flex-direction: row;
+}
