@@ -5,17 +5,18 @@ export default function Lawyer(props) {
       <h1>Lawyer List</h1>
       <div class="container">  
  </div>
+ 
         <ul>
-        <li>Lawyer 1!</li>
-        <li>Lawyer 2!</li>
-        <li>Lawyer 3!</li>
-        <li>Lawyer 4!</li>
-        <li>Lawyer 5!</li>
-        <li>Lawyer 6!</li>
-        <li>Lawyer 7!</li>
-        <li>Lawyer 8!</li>
-        <li>Lawyer 9!</li>
-        <li>Lawyer 10!</li>
+        <li><button class="glow-on-hover" type="button">Lawyer 1!</button></li>
+        <li><button class="glow-on-hover" type="button">Lawyer 2!</button></li>
+        <li><button class="glow-on-hover" type="button">Lawyer 3!</button></li>
+        <li><button class="glow-on-hover" type="button">Lawyer 4!</button></li>
+        <li><button class="glow-on-hover" type="button">Lawyer 5!</button></li>
+        <li><button class="glow-on-hover" type="button">Lawyer 6!</button></li>
+        <li><button class="glow-on-hover" type="button">Lawyer 7!</button></li>
+        <li><button class="glow-on-hover" type="button">Lawyer 8!</button></li>
+        <li><button class="glow-on-hover" type="button">Lawyer 9!</button></li>
+        <li><button class="glow-on-hover" type="button">Lawyer 10!</button></li>
      </ul>
 
 
