@@ -1,10 +1,15 @@
-import "./App.css";
+
+import "./Styles/App.css";
 
 import Header from "./components/Header";
 
 import Lawyer from "./components/Lawyer";
 
 import MainBody from "./components/MainBody";
+
+import Chatbox from "./components/Chatbox";
+
+import "./Styles/Chatbox.css";
 
 function App() {
   return (
@@ -18,6 +23,9 @@ function App() {
 
       {/* This is the main section */}
       <MainBody />
+      </div>
+      <div>
+        <Chatbox />
       </div>
     </div> 
   );
