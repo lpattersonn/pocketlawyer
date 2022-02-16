@@ -3,7 +3,6 @@ body {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
- 
 }
 
 /* Main */
@@ -17,9 +16,9 @@ body {
   pointer-events: none;
 }
 
-.title{
-  font-family: 'Bungee', cursive;
-/* font-family: 'Shizuru', cursive; */
+.title {
+  font-family: "Bungee", cursive;
+  /* font-family: 'Shizuru', cursive; */
   font-size: 17px;
 }
 
@@ -61,12 +60,12 @@ body {
   }
 }
 
- /* Body */
+/* Body */
 .main {
   height: 100%;
-  padding-top: 50px;
+  margin-top: 5px;
   display: flex;
-    flex-direction: row;
+  flex-direction: row;
 }
 
 /* Sidebar */
@@ -76,7 +75,6 @@ body {
   height: 500px;
   /* border: 1px solid grey; */
   overflow: auto;
-  margin-top: 3em;
   /* max-height: 800px;
   overflow-y: scroll;   */
 }
@@ -84,24 +82,22 @@ body {
 #side-bar h1 {
   margin-bottom: 0;
 }
- 
+
 #side-bar ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;  
+  padding: 0;
 }
 #side-bar ul li {
   padding-top: 20px;
 }
 
-
 /* Mainbody */
 .mainbody {
   width: 100%;
-  
+
   display: flex;
-    justify-content: center;
-  
+  justify-content: center;
 }
 
 .searchbar {
@@ -110,24 +106,29 @@ body {
   margin: 50px;
 }
 
-.searchbar input{
+.searchbar input {
   width: 60%;
   height: 35px;
   border-radius: 30px;
   padding-left: 50px;
-  border-width:0px;
-  border:none;
+  border-width: 0px;
+  border: none;
   background-image: url("https://static.thenounproject.com/png/101791-200.png");
   background-repeat: no-repeat;
   background-position: 13px center;
-  background-size: 20px;  
-   outline: none;
+  background-size: 20px;
+  outline: none;
 }
 
 .searchbar-div {
   color: antiquewhite;
   border-radius: 25px;
-  background-image: linear-gradient(to bottom right, rgb(77, 155, 164), #1a62ff, #8b3dff);
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(77, 155, 164),
+    #1a62ff,
+    #8b3dff
+  );
   /* background-color: #61dafb; */
   width: 100%;
   height: 50%;
