@@ -28,6 +28,8 @@ export default function Chatbox(props) {
   <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
   <span className="time-left">11:05</span>
 </div>
+
+
   </section>
    
   )

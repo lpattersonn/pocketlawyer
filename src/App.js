@@ -11,6 +11,15 @@ import Chatbox from "./components/Chatbox";
 
 import "./Styles/Chatbox.css";
 
+import "./Styles/message.css";
+
+import "./Styles/user-input.css";
+
+import "./Styles/chat-window.css";
+
+
+import ChatWindow from './components/ChatWindow';
+
 function App() {
   return (
     <div className="App">
@@ -25,7 +34,7 @@ function App() {
       <MainBody />
       </div>
       <div>
-        <Chatbox />
+        <ChatWindow />
       </div>
     </div> 
   );

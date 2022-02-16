@@ -1,23 +1,16 @@
-import react from "react";
+import React from 'react';
+import closeIcon from './../assets/close-icon.png';
 
-export default function Header(props) {
+function Header(props) {
   return (
-    <header>
-        <nav className="nav">
-          <div className="title">
-            <h1>
-            <span class="multicolortext">Pocket Lawyer</span>
-              </h1>
-          </div>
-          <div>
-            <ul className="nav-list">
-              <li>SOS</li>
-              <li>Requests</li>
-              <li>Find Advice</li>
-            </ul>
-          </div>
-        </nav>
-        
-      </header>
-  )
-} 
+    <div className="sc-header">
+      <img className="sc-header--img" alt="" />
+      <div className="sc-header--team-name"> </div>
+      <div className="sc-header--close-button" >
+        <img  alt="" />
+      </div>
+    </div>
+  );
+}
+
+export default Header;
