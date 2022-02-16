@@ -5,6 +5,8 @@ import MessageList from './MessageList';
 import UserInput from './UserInput';
 import Header from './Header';
 import PinMessage from './PinMessage';
+import Chatbox from "./Chatbox";
+import "../Styles/chat-window.css";
 
 function ChatWindow(props) {
   // const {
@@ -29,14 +31,14 @@ function ChatWindow(props) {
   return (
   <div className='sc-chat-window'>
 
-       {/* <Header
-        teamName={teamName}
-        imageUrl={imageUrl}
-        onClose={onClose}
+       <Header
+        
       /> 
 
-      {/* {pinMessage && <PinMessage pinMessage={pinMessage} onPinMessage={onPinMessage} />} */}
-      
+       <PinMessage  /> 
+      {/* <div>
+        <Chatbox />
+      </div> */}
       <MessageList
         messages={[]}
         imageUrl={"https://www.npmjs.com/npm-avatar/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdmF0YXJVUkwiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci9hNDE3NTFiNWUxMDAxYWJlNjE3NjA3ZjMxYzI2NTU5Yz9zaXplPTEwMCZkZWZhdWx0PXJldHJvIn0.BmbsZ0tJHd0a2Qlxk-p7Gci99M1o9-64cIhpMyKT8ek"}

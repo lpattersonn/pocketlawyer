@@ -5,6 +5,7 @@ import FileIcon from './icons/FileIcon';
 import EmojiIcon from './icons/EmojiIcon';
 import PopupWindow from './popups/PopupWindow';
 import EmojiPicker from './emoji-picker/EmojiPicker';
+import "../Styles/user-input.css";
 
 class UserInput extends Component {
   constructor() {

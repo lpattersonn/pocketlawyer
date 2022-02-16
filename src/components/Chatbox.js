@@ -1,6 +1,6 @@
 import react from "react";
 
-
+import "../Styles/Chatbox.css";
 
 export default function Chatbox(props) {
   return (

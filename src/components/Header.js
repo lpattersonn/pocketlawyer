@@ -1,5 +1,6 @@
 import React from 'react';
 import closeIcon from './../assets/close-icon.png';
+import "../Styles/header.css"
 
 function Header(props) {
   return (

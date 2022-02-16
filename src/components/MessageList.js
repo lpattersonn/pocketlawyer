@@ -1,6 +1,7 @@
 import { prop } from 'ramda';
 import React, { useRef, useEffect } from 'react';
 import Message from './Messages';
+import "../Styles/message.css";
 
 function MessageList(props) {
   const element = useRef(null);
