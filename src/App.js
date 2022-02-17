@@ -27,6 +27,7 @@ function App() {
     name: "",
     img: "",
     description: "",
+    focus: "",
     style: "closePopUp"
   })
   
@@ -57,6 +58,7 @@ function App() {
           key={lawyerPopUp.name}
           name={lawyerPopUp.name}
           img={lawyerPopUp.img}
+          focus={lawyerPopUp.focus}
           description={lawyerPopUp.description}
           setLawyerPopUp={setLawyerPopUp}
         />

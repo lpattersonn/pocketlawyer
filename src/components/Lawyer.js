@@ -21,10 +21,14 @@ export default function Lawyer(props) {
       <div className="lawyers-list"  onClick={() => {props.setLawyerPopUp({
         name: lawyer.name,
         img: lawyer.img,
-        description: "This will be the location for the lawyer list.",
+        focus: lawyer.focus,
+        description: lawyer.description,
         style: "temp"
       })}} >
         <img src={lawyer.img} alt={lawyer.name} class="lawyerImg"/>
+        <p>
+          {lawyer.focus}
+        </p>
       
     </div>
    
