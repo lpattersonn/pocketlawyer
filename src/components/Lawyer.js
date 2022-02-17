@@ -34,11 +34,8 @@ export default function Lawyer(props) {
    
     </div>
   )
-  })  
-
-  //console.log(lawyerList)
+  }) 
   
- 
   return (
     <section id="side-bar">
       <h4> {lawyerCount} Lawyers Online</h4>
