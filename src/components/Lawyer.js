@@ -1,40 +1,38 @@
 import "../Styles/lawyer.css"
 
-import LawyerList from "./LawyerList"
-
 export default function Lawyer(props) {
 
  const lawyerCount = props.lawyers.length
   
- console.log(props.lawyers)
+ //console.log(props.lawyers)
 
   const lawyerList = props.lawyers.map((lawyer) => {
-    console.log(lawyer.name)
-    // const popup = () => {
-    //   return (
-    //     <div>
-    //       <span class="popuptext" id="myPopup">{lawyer.name}</span>
-    //     </div>
-    //   )
-    // }
+  //  console.log(lawyer.name)
+    
+    function popup(value) {
+      console.log(value)
+      document.getElementById("List").style.display ="none";
+    };
+
     return (
       <div>
-      <div className="lawyers-list"  onClick={() => {
-      <LawyerList />
-        // {popup}
-      }}>
-      <img src={lawyer.img} alt={lawyer.name} class="lawyerImg"/>
+        <div id={lawyer.name}>
+      </div>
+      <div className="lawyers-list"  onClick={() => {props.setLawyerPopUp({
+        name: lawyer.name,
+        img: lawyer.img,
+        description: "This will be the location for the lawyer list.",
+        style: "temp"
+      })}} >
+        <img src={lawyer.img} alt={lawyer.name} class="lawyerImg"/>
+      
     </div>
-    <LawyerList
-        id={lawyer.id}
-        name={lawyer.name}
-        img={lawyer.img}
-    />
+   
     </div>
   )
   })  
 
-  console.log(lawyerList)
+  //console.log(lawyerList)
   
  
   return (

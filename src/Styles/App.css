@@ -12,7 +12,7 @@ body {
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 40px;
   pointer-events: none;
 }
 
@@ -63,7 +63,6 @@ body {
 /* Body */
 .main {
   height: 100%;
-  margin-top: 5px;
   display: flex;
   flex-direction: row;
 }
@@ -71,6 +70,7 @@ body {
 /* Sidebar */
 #side-bar {
   /* height: 100%; */
+  margin-top: 1.7em;
   width: 20%;
   height: 500px;
   /* border: 1px solid grey; */
@@ -89,7 +89,7 @@ body {
   padding: 0;
 }
 #side-bar ul li {
-  padding-top: 20px;
+
 }
 
 /* Mainbody */
@@ -133,6 +133,22 @@ body {
   width: 100%;
   height: 50%;
   margin: 3em;
+}
+
+.temp {
+  position: fixed;
+  margin-left: 31%;
+  margin-right: 31%;
+  margin-top: 7%;
+  
+}
+
+.closePopUp {
+  position: fixed;
+  margin-left: 31%;
+  margin-right: 31%;
+  margin-top: 7%;
+  opacity: 0;
 }
 
 /* Lawyer button */

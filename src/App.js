@@ -14,10 +14,21 @@ import Nav from "./components/Nav";
 
 import axios from 'axios'
 
+import PopChat from "./components/PopChat";
+
+import LawyerPop from "./components/LawyerPop";
+
 
 function App() {
 
   const [lawyers, setLawyers] = useState([])
+
+  const [lawyerPopUp, setLawyerPopUp] = useState({
+    name: "",
+    img: "",
+    description: "",
+    style: "closePopUp"
+  })
   
   useEffect(() => {
    axios.get("/api/lawyers")
@@ -26,19 +37,37 @@ function App() {
      setLawyers(res.data)
    })}, [])
    console.log(lawyers, "THIS ONE")
+
+   const msgs = ['hey, whatsup!', 'how are you?', 'how is the weather today?', 'what is day today'];
+
+   //function to retrive the message to be sent
+   const getMessage = (msg) => {
+     console.log(msg)
+   }
    
   return (
     <div className="App">
       <Nav />
       <div class="main">
       {/* Laywers online section*/}
-      <Lawyer lawyers={lawyers} />
+      <Lawyer lawyers={lawyers} setLawyerPopUp={setLawyerPopUp} />
+
+      <div className={lawyerPopUp.style}>
+        <LawyerPop
+          key={lawyerPopUp.name}
+          name={lawyerPopUp.name}
+          img={lawyerPopUp.img}
+          description={lawyerPopUp.description}
+          setLawyerPopUp={setLawyerPopUp}
+        />
+      </div>
 
       {/* This is the main section */}
       <MainBody />
       </div>
       <div>
-        <ChatWindow />
+        {/* <ChatWindow /> */}
+        <PopChat messages={msgs} getMessage={getMessage} />
       </div>
     </div> 
   );

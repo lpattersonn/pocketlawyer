@@ -2,9 +2,6 @@
 
 #nav {
   font-family: sans-serif;
-
-  padding-left: 2em;
-  padding-left: 2em;
   border-bottom: 1px solid rgb(237, 235, 235);
   width: 100%;
   display: flex;
@@ -23,8 +20,7 @@ nav li {
 }
 
 #title {
-  padding-left: 40px;
-
+  padding-left: 1em;
   display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -42,7 +38,7 @@ ul li {
 }
 
 #login {
-  padding-right: 40px;
+  padding-right: 2em;
   display: flex;
     justify-content: center;
     flex-direction: row;
