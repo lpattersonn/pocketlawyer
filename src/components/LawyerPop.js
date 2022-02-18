@@ -3,7 +3,7 @@ import react from "react";
 import "../Styles/lawyerpop.css"
 
 export default function LawyerList(props) {
-  console.log(props);
+  
   return (
     <section id="show-popup">
       <div className='close' onClick={() => {props.setLawyerPopUp({

@@ -10,14 +10,14 @@ export default function Lawyer(props) {
   //  console.log(lawyer.name)
     
     function popup(value) {
-      console.log(value)
+      // console.log(value)
       document.getElementById("List").style.display ="none";
     };
 
     return (
       <div>
-        <div id={lawyer.name}>
-      </div>
+        {/* <div id={lawyer.name}>
+      </div> */}
       <div className="lawyers-list"  onClick={() => {props.setLawyerPopUp({
         name: lawyer.name,
         img: lawyer.img,
