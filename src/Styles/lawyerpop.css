@@ -1,4 +1,6 @@
-/* #show-popup {
+#show-popup {
+   /* z-index: 7; */
+  
   background: white;
   width: 700px;
   height: 400px;
@@ -14,7 +16,7 @@
 	animation-timing-function: ease-in;
 	animation-duration: 0.4s;
        
-} */
+}
 
 @keyframes fadeInOpacity {
 	0% {

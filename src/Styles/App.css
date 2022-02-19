@@ -117,6 +117,7 @@ body {
 }
 
 .searchbar-div {
+    z-index: 1;
   color: antiquewhite;
   border-radius: 25px;
   background-image: linear-gradient(
@@ -150,67 +151,7 @@ body {
   padding-left: 70px;
 }
 
-.Trafic {
-  border: 2px solid black;
-  background-color: white;
-  border-radius: 50px;
-  padding: 5px;
-  width: 70px;
-  height: 70px;
-  z-index: 100%;
-}
-
-.Trafic:hover {
-  background-color: rgb(73, 187, 149);
-  border-color: honeydew;
-}
-
-.Realestate {
-  border: 2px solid black;
-  background-color: white;
-  border-radius: 50px;
-  padding: 5px;
-  width: 70px;
-  height: 70px;
-  z-index: 100%;
-}
-
-.Realestate:hover {
-  background-color: goldenrod;
-  border-color: honeydew;
-}
-
-.Injury {
-  border: 2px solid black;
-  background-color: white;
-  border-radius: 50px;
-  padding: 5px;
-  width: 70px;
-  height: 70px;
-  z-index: 100%;
-}
-
-.Injury:hover {
-  background-color: goldenrod;
-  border-color: honeydew;
-}
-
-.Contract {
-  border: 2px solid black;
-  background-color: white;
-  border-radius: 50px;
-  padding: 5px;
-  width: 70px;
-  height: 70px;
-  z-index: 100%;
-}
-
-.Contract:hover {
-  background-color: goldenrod;
-  border-color: honeydew;
-}
-
-.Family {
+.icon_area {
   border: 2px solid black;
   background-color: white;
   padding: 5px;
@@ -218,11 +159,28 @@ body {
   width: 70px;
   height: 70px;
   z-index: 1;
+
+  opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.4s;
 }
 
-.Family:hover {
-  background-color: goldenrod;
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.icon_area:hover {
+  background-color: rgb(235, 222, 51);
   border-color: honeydew;
+  cursor: pointer;
 }
 
 .temp {
@@ -230,9 +188,11 @@ body {
   margin-left: 31%;
   margin-right: 31%;
   margin-top: 7%;
+  z-index: 3;
 }
 
 .closePopUp {
+  
   position: fixed;
   margin-left: 31%;
   margin-right: 31%;
@@ -263,6 +223,7 @@ display: felx;
 
 /* Faq area */
 #faq-area {
+  color: white;
   position: absolute;
   z-index: 1;
   border: 1px solid black;
@@ -278,8 +239,24 @@ display: felx;
     #1a62ff,
     #8b3dff
   );
+  overflow: auto;
+  
 }
+
 
 .faq-body_disappear {
   opacity: 0%;
+}
+
+.faq_close-btn {
+  margin-top: 8px;
+  width: 20px;
+  height: 20px;
+  margin-left: 97%;
+}
+
+.faq_popup-article {
+  border: 1px solid white;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }

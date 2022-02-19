@@ -3,16 +3,9 @@ import "../Styles/lawyer.css"
 export default function Lawyer(props) {
 
  const lawyerCount = props.lawyers.length
-  
- //console.log(props.lawyers)
 
+// Individual Lawyers
   const lawyerList = props.lawyers.map((lawyer) => {
-  //  console.log(lawyer.name)
-    
-    function popup(value) {
-      // console.log(value)
-      document.getElementById("List").style.display ="none";
-    };
 
     return (
       <div>
@@ -34,8 +27,9 @@ export default function Lawyer(props) {
    
     </div>
   )
-  }) 
-  
+  })
+
+// Lawyer list Section 
   return (
     <section id="side-bar">
       <h4> {lawyerCount} Lawyers Online</h4>

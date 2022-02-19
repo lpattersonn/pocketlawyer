@@ -16,7 +16,7 @@ import Nav from "./components/Nav";
 
 import axios from "axios";
 
-// import PopChat from "./components/PopChat";
+import PopChat from "./components/PopChat";
 
 import LawyerPop from "./components/LawyerPop";
 
@@ -105,7 +105,7 @@ function App() {
 
       <div>
         {/* <ChatWindow /> */}
-        {/* <PopChat messages={msgs} getMessage={getMessage} /> */}
+        <PopChat messages={msgs} getMessage={getMessage} />
       </div>
     </div>
   );
