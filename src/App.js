@@ -1,3 +1,5 @@
+// Imports
+
 import React, { useState, useEffect } from "react";
 
 import "./Styles/App.css";
@@ -20,7 +22,10 @@ import LawyerPop from "./components/LawyerPop";
 
 import Questions from "./components/Questions";
 
+import Chat from "./components/Chat";
+
 function App() {
+  // State
   const [lawyers, setLawyers] = useState([]);
 
   const [questions, setQuestions] = useState([]);
@@ -49,9 +54,8 @@ function App() {
   }, []);
 
   useEffect(() => {
-    axios.get("/api/questions")
-    .then((res) => {
-      console.log(res.data)
+    axios.get("/api/questions").then((res) => {
+      console.log(res.data);
       setQuestions(res.data);
     });
   }, []);
