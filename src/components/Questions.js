@@ -1,7 +1,5 @@
 import react from "react";
 
-import { useQuery } from 'react-query';
-
 export default function Questions(props) {
     return (
       <section id="show-popup">

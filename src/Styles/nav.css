@@ -38,7 +38,7 @@ ul li {
 }
 
 #login {
-  padding-right: 2em;
+  padding-right: 1em;
   display: flex;
     justify-content: center;
     flex-direction: row;
