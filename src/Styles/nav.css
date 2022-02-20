@@ -12,7 +12,7 @@
 
 nav .logo {
   width: 100px;
-  height: 75px;
+  height: 60px;
   font-size: 25px;
 }
 
@@ -24,10 +24,17 @@ nav li {
 
 #title {
   padding-left: 1em;
+  margin-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   text-decoration: none;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.loginArea {
+  margin-top: 10px;
+  padding-bottom: 10px;
 }
 
 #title ul {

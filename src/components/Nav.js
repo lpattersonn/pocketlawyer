@@ -20,7 +20,7 @@ export default function Nav() {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="loginArea">
         <ul id="login">
           <li>Login</li>
           <li>Register</li>
