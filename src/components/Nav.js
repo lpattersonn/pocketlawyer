@@ -7,14 +7,16 @@ export default function Nav() {
   return (
     <nav id="nav">
       <div id="title">
-        <h1>Pocket Lawyer</h1>
-        <img src="/pocketlawyer.png" />
+        <img
+          className="logo"
+          src="https://github.com/lpattersonn/pocketlawyer/blob/main/public/pocketlawyer.png?raw=true"
+        />
         <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
           <li>
-          <Link to="/sos">SOS</Link>
+            <Link to="/sos">SOS</Link>
           </li>
         </ul>
       </div>
