@@ -11,30 +11,56 @@ const[searchInput, setSearchInput] = useState({
 });
 
   const [subject, setSubject] = useState({
-    subject:"",
+    subject: "",
     style: "faq-body_disappear"})
 
   const {questions, setQuestions} = props
 
   const [Faq, setFaq] = useState([])
 
-  
+  // console.log("THIS IS STATE", subject.subject)
 
   console.log('THIS IS FAQ RESULT', Faq)
-  // console.log('This is QUESTION DATA', questions)
+  
+const searchReturn = function() {
 
-  // setQuestion(Faq)
-  // setSubject()
-  // Get Questions Subject
- const questionsArray = questions.map((question) => { if (question.subject == subject.subject) {
-  return (
-    <article className="faq_popup-article">
-      <h3>{question.question}</h3>
-      <p>{question.answer}</p>
-    </article>
- )
+const result = subject.subject.split(" ");
+console.log('This is RESULT', result)
+
+
+  for (let val of result) {
+
+  const questionsArray = questions.map((question, key) => { 
+    
+    const result1 = question.subject.split(" ");
+    console.log('This is RESULT1', result1)
+
+    
+    for (let valTwo of result1) {
+    if (val.toLowerCase() === valTwo.toLowerCase()) {
+    return (
+      <article key={key} className="faq_popup-article">
+        <h3>{question.question}</h3>
+        <p>{question.answer}</p>
+      </article>
+        )
+      }
+    }
+   })
+    return questionsArray
+  } 
 }
- })
+
+
+//  const questionsArray = questions.map((question) => { if (question.subject === subject.subject) {
+//   return (
+//     <article className="faq_popup-article">
+//       <h3>{question.question}</h3>
+//       <p>{question.answer}</p>
+//     </article>
+//  )
+// }
+//  })
 
 const faq = () => {
 return (
@@ -42,8 +68,10 @@ return (
     <div>
      <img className='icon_area' src='https://i.dlpng.com/static/png/7363099_preview.png' onClick={() => {
         // alert("Trafic was Clicked")
+        // setQuestions(questions)
+        resetQuestion()
         setSubject({
-          subject:"Traffic",
+          subject: "Traffic",
           style: "icon_area"})
        }}  />
     </div>   
@@ -51,32 +79,40 @@ return (
       <img className='icon_area' src='https://cdn-icons-png.flaticon.com/512/69/69954.png'
       onClick={() => {
         // alert("Realestate was Clicked")
+        // setQuestions(questions)
+        resetQuestion()
         setSubject({
-          subject:"Real Estate",
+          subject: "Real Estate",
           style: "icon_area"})
        }} />
     </div>
     <div>
       <img className='icon_area'  src='http://nowinnofeepersonalinjurylawyers.com.au/wp-content/uploads/2017/07/Injured-person-icon-for-no-win-no-fee-personal-injury-lawyer-post-296x300.png' onClick={() => {
       // alert("Injury was Clicked")
+      // setQuestions(questions)
+      resetQuestion()
       setSubject({
-        subject:"Injury",
+        subject: "Injury",
         style: "icon_area"})
      }} />
     </div>
     <div>
       <img className='icon_area' src='https://cdn.iconscout.com/icon/premium/png-256-thumb/contract-law-956798.png' onClick={() => {
       // alert("Contract was Clicked")
+      // setQuestions(questions)
+      resetQuestion()
       setSubject({
-        subject:"Contract",
+        subject: "Contract",
         style: "icon_area"})
      }} />
     </div>
     <div>
       <img className='icon_area' alt="Family"  onClick={() => {
       // alert("Family was Clicked")
+      // setQuestions(questions)
+      resetQuestion()
       setSubject({
-        subject:"Family",
+        subject: "Family",
         style: "icon_area"})
      }}
       src='https://static.vecteezy.com/system/resources/thumbnails/004/329/268/small/family-court-glyph-icon-silhouette-symbol-child-custody-family-law-proceedings-divorce-mediation-legal-separation-negative-space-isolated-illustration-vector.jpg' />
@@ -98,6 +134,16 @@ const search = function(event) {
   })
 }
 
+const resetQuestion = function(event) {  
+  axios.get("/api/questions")
+    .then((res) => {
+      // console.log(res.data)
+      setQuestions(res.data);
+    });
+}
+
+
+
 // Get event value
 const getInputVal = (event) => {
   setSearchInput({
@@ -105,17 +151,19 @@ const getInputVal = (event) => {
     [event.target.name]: event.target.value
   });
 };
+
   return (
     <section className="mainbody">
         <div className="searchbar-div">
           <form className="searchbar" disable={searchInput.search.length < 1} onSubmit={(event) => {
-            event.preventDefault();
+             event.preventDefault();
             search(searchInput)
             setQuestions(Faq)
             setSubject({
               subject: searchInput.search,
               style: 'icon_area'
             })
+           
           }}>
             <h2>How can we help you?</h2>
             <input type="text" placeholder="Search..." name="search" value={searchInput.search} onChange={getInputVal} />
@@ -133,10 +181,9 @@ const getInputVal = (event) => {
           }
         } src='https://icon-library.com/images/close-button-icon/close-button-icon-26.jpg' />
         
-            {questionsArray}
+            {searchReturn()}
           </div>
 
-          
       </section>
   )
 }
