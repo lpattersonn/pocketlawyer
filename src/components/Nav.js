@@ -7,10 +7,12 @@ export default function Nav() {
   return (
     <nav id="nav">
       <div id="title">
+      <a href="/">
         <img
           className="logo"
           src="https://github.com/lpattersonn/pocketlawyer/blob/main/public/pocketlawyer.png?raw=true"
         />
+        </a>
         <ul>
           <li>
             <Link to="/">Home</Link>
