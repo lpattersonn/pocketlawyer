@@ -8,6 +8,7 @@ export default function Nav() {
     <nav id="nav">
       <div id="title">
         <h1>Pocket Lawyer</h1>
+        <img src="/pocketlawyer.png" />
         <ul>
           <li>
             <Link to="/">Home</Link>
