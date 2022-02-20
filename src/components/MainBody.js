@@ -1,70 +1,189 @@
-import react from "react";
-
+//  Imports
+import axios from "axios";
+import React, {useState} from "react";
 import "../Styles/mainbody.css"
 import Questions from "./Questions";
 
+
 export default function MainBody(props) {
+const[searchInput, setSearchInput] = useState({
+  search: ""
+});
 
-  // function result(subject) {
-  //   for (let result of props.questions) {
-  //     if 
-  //   }
+  const [subject, setSubject] = useState({
+    subject: "",
+    style: "faq-body_disappear"})
 
-  // }
+  const {questions, setQuestions} = props
 
-  const faq = props.questions.map((result) => {
+  const [Faq, setFaq] = useState([])
 
+  // console.log("THIS IS STATE", subject.subject)
+
+  console.log('THIS IS FAQ RESULT', Faq)
+  
+const searchReturn = function() {
+
+const result = subject.subject.split(" ");
+console.log('This is RESULT', result)
+
+
+  for (let val of result) {
+
+  const questionsArray = questions.map((question, key) => { 
+    
+    const result1 = question.subject.split(" ");
+    console.log('This is RESULT1', result1)
+
+    
+    for (let valTwo of result1) {
+    if (val.toLowerCase() === valTwo.toLowerCase()) {
+    return (
+      <article key={key} className="faq_popup-article">
+        <h3>{question.question}</h3>
+        <p>{question.answer}</p>
+      </article>
+        )
+      }
+    }
+   })
+    return questionsArray
+  } 
+}
+
+
+//  const questionsArray = questions.map((question) => { if (question.subject === subject.subject) {
+//   return (
+//     <article className="faq_popup-article">
+//       <h3>{question.question}</h3>
+//       <p>{question.answer}</p>
+//     </article>
+//  )
+// }
+//  })
+
+const faq = () => {
 return (
-  <div>
-    {/* <div id={lawyer.name}>
-  </div> */}
-  <div className="lawyers-list"  onClick={() => {props.setLawyerPopUp({
-   question: props.question,
-   answer: props.answer,
-   subject: props.subject,
-   style: "temp"
-  })}} >
+  <div className="icons">
+    <div>
+     <img className='icon_area' src='https://i.dlpng.com/static/png/7363099_preview.png' onClick={() => {
+        // alert("Trafic was Clicked")
+        // setQuestions(questions)
+        resetQuestion()
+        setSubject({
+          subject: "Traffic",
+          style: "icon_area"})
+       }}  />
+    </div>   
+    <div>
+      <img className='icon_area' src='https://cdn-icons-png.flaticon.com/512/69/69954.png'
+      onClick={() => {
+        // alert("Realestate was Clicked")
+        // setQuestions(questions)
+        resetQuestion()
+        setSubject({
+          subject: "Real Estate",
+          style: "icon_area"})
+       }} />
+    </div>
+    <div>
+      <img className='icon_area'  src='http://nowinnofeepersonalinjurylawyers.com.au/wp-content/uploads/2017/07/Injured-person-icon-for-no-win-no-fee-personal-injury-lawyer-post-296x300.png' onClick={() => {
+      // alert("Injury was Clicked")
+      // setQuestions(questions)
+      resetQuestion()
+      setSubject({
+        subject: "Injury",
+        style: "icon_area"})
+     }} />
+    </div>
+    <div>
+      <img className='icon_area' src='https://cdn.iconscout.com/icon/premium/png-256-thumb/contract-law-956798.png' onClick={() => {
+      // alert("Contract was Clicked")
+      // setQuestions(questions)
+      resetQuestion()
+      setSubject({
+        subject: "Contract",
+        style: "icon_area"})
+     }} />
+    </div>
+    <div>
+      <img className='icon_area' alt="Family"  onClick={() => {
+      // alert("Family was Clicked")
+      // setQuestions(questions)
+      resetQuestion()
+      setSubject({
+        subject: "Family",
+        style: "icon_area"})
+     }}
+      src='https://static.vecteezy.com/system/resources/thumbnails/004/329/268/small/family-court-glyph-icon-silhouette-symbol-child-custody-family-law-proceedings-divorce-mediation-legal-separation-negative-space-isolated-illustration-vector.jpg' />
+    </div>
+  </div>
+ )
+}
 
-   {result.subject == 'Traffic' ?  
-   <Questions
-   question={result.question}
-   answer={result.answer}
-   />
-     : null}
-   
-</div>
-
-</div>
-)
+// Imput form submit
+const search = function(event) {
+  
+  axios.get('/searchResult',  {
+    params: {
+    search: searchInput.search
+  }
 })
+  .then((res) => {
+  setFaq(res.data)  
+  })
+}
+
+const resetQuestion = function(event) {  
+  axios.get("/api/questions")
+    .then((res) => {
+      // console.log(res.data)
+      setQuestions(res.data);
+    });
+}
+
+
+
+// Get event value
+const getInputVal = (event) => {
+  setSearchInput({
+    ...searchInput, 
+    [event.target.name]: event.target.value
+  });
+};
 
   return (
     <section className="mainbody">
         <div className="searchbar-div">
-          <form className="searchbar">
+          <form className="searchbar" disable={searchInput.search.length < 1} onSubmit={(event) => {
+             event.preventDefault();
+            search(searchInput)
+            setQuestions(Faq)
+            setSubject({
+              subject: searchInput.search,
+              style: 'icon_area'
+            })
+           
+          }}>
             <h2>How can we help you?</h2>
-            <input placeholder="Search..."></input>
-            <div className="icons">
-            <div>
-              {/* <p>"circle 1"</p> */}
-              {/* <img className='trafic'  src='https://i.dlpng.com/static/png/7363099_preview.png' onClick={() => {result('Traffic', props.questions)}}/> */}
-            </div>
-            <div>
-            <img className='realestate'  src='https://cdn-icons-png.flaticon.com/512/69/69954.png' />
-            </div>
-            <div>
-            <img className='injury'  src='http://nowinnofeepersonalinjurylawyers.com.au/wp-content/uploads/2017/07/Injured-person-icon-for-no-win-no-fee-personal-injury-lawyer-post-296x300.png' />
-            </div>
-            <div>
-            <img className='contract'  src='https://cdn.iconscout.com/icon/premium/png-256-thumb/contract-law-956798.png' />
-            </div>
-            <div>
-            <img className='family'  src='https://static.vecteezy.com/system/resources/thumbnails/004/329/268/small/family-court-glyph-icon-silhouette-symbol-child-custody-family-law-proceedings-divorce-mediation-legal-separation-negative-space-isolated-illustration-vector.jpg' />
-            </div>
-            </div>
+            <input type="text" placeholder="Search..." name="search" value={searchInput.search} onChange={getInputVal} />
+            {faq()}
           </form>
-        </div>
-         
+          
+          </div>
+          <div id="faq-area" className={subject.style}>
+             <img className="faq_close-btn" onClick={() => {
+               
+             setSubject({
+              subject: "",
+              style: "faq-body_disappear"
+            })
+          }
+        } src='https://icon-library.com/images/close-button-icon/close-button-icon-26.jpg' />
+        
+            {searchReturn()}
+          </div>
+
       </section>
   )
 }

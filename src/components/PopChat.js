@@ -40,7 +40,7 @@ const handleSend = e => {
     </div>
     <div class="footer">
       <input type="text"  ref={textRef} />
-      <button onClick={handleSend}><i class="fa fa-paper-plane"></i></button>
+      <button onClick={handleSend}><i class="fa fa-paper-plane">Send!</i></button>
     </div>
   </div>
     <div class="pop">

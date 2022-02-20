@@ -72,7 +72,7 @@ body {
   /* height: 100%; */
   margin-top: 1.7em;
   width: 20%;
-  height: 768px;
+  height: 850px;
   /* border: 1px solid grey; */
   overflow: auto;
   /* max-height: 800px;
@@ -87,9 +87,6 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-#side-bar ul li {
-
 }
 
 /* Mainbody */
@@ -120,6 +117,7 @@ body {
 }
 
 .searchbar-div {
+    z-index: 1;
   color: antiquewhite;
   border-radius: 25px;
   background-image: linear-gradient(
@@ -134,120 +132,66 @@ body {
   margin: 3em;
 }
 
-.icons{
+.icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width:60%;
- /* padding-right: 40px; */
- padding-left: 126px;
+  width: 60%;
+  /* padding-right: 40px; */
+  padding-left: 126px;
   margin-top: 50px;
   margin-left: 50px;
   margin-bottom: 100px;
-
 }
 
 .icons div {
   width: 70%;
-  
- padding-left: 70px;
+
+  padding-left: 70px;
 }
 
-.trafic {
+.icon_area {
   border: 2px solid black;
   background-color: white;
+  padding: 5px;
   border-radius: 50px;
-  padding:5px;
   width: 70px;
-  height:70px;
-  z-index: 100%;
+  height: 70px;
+  z-index: 1;
+
+  opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.4s;
 }
 
-.trafic:hover {
-  background-color: rgb(73, 187, 149);
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.icon_area:hover {
+  background-color: rgb(235, 222, 51);
   border-color: honeydew;
+  cursor: pointer;
 }
-
-.realestate {
-  border: 2px solid black;
-  background-color: white;
-  border-radius: 50px;
-  padding:5px;
-  width: 70px;
-  height:70px;
-  z-index: 100%;
-}
-
-
-.realestate:hover {
-  background-color: goldenrod;
-  border-color: honeydew;
-}
-
-
-.injury {
-  border: 2px solid black;
-  background-color: white;
-  border-radius: 50px;
-  padding:5px;
-  width: 70px;
-  height:70px;
-  z-index: 100%;
-}
-
-
-.injury:hover {
-  background-color: goldenrod;
-  border-color: honeydew;
-}
-
-.contract {
-  border: 2px solid black;
-  background-color: white;
-  border-radius: 50px;
-  padding:5px;
-  width: 70px;
-  height:70px;
-  z-index: 100%;
-}
-
-
-.contract:hover {
-  background-color: goldenrod;
-  border-color: honeydew;
-}
-
-
-.family {
-  border: 2px solid black;
-  background-color: white;
-  border-radius: 50px;
-  padding:5px;
-  width: 70px;
-  height:70px;
-  z-index: 100%;
-}
-
-
-.family:hover {
-  background-color: goldenrod;
-  border-color: honeydew;
-}
-
-
-
-
-
 
 .temp {
   position: fixed;
   margin-left: 31%;
   margin-right: 31%;
   margin-top: 7%;
-  
+  z-index: 3;
 }
 
 .closePopUp {
+  
   position: fixed;
   margin-left: 31%;
   margin-right: 31%;
@@ -274,4 +218,44 @@ display: felx;
   position: fixed;
   background-color: blue;
   border: 1px solid black;
+}
+
+/* Faq area */
+#faq-area {
+  color: white;
+  position: absolute;
+  z-index: 1;
+  border: 1px solid black;
+  width: 1460px;
+  height: 50%;
+  margin-top: 28em;
+  margin-left: 2em;
+  margin-right: 2em;
+  border-radius: 25px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(77, 155, 164),
+    #1a62ff,
+    #8b3dff
+  );
+  overflow: auto;
+  
+}
+
+
+.faq-body_disappear {
+  opacity: 0%;
+}
+
+.faq_close-btn {
+  margin-top: 8px;
+  width: 20px;
+  height: 20px;
+  margin-left: 97%;
+}
+
+.faq_popup-article {
+  border: 1px solid white;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }

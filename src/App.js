@@ -14,7 +14,7 @@ import Nav from "./components/Nav";
 
 import axios from "axios";
 
-// import PopChat from "./components/PopChat";
+import PopChat from "./components/PopChat";
 
 import LawyerPop from "./components/LawyerPop";
 
@@ -49,24 +49,12 @@ function App() {
   }, []);
 
   useEffect(() => {
-    axios.get("/api/questions").then((res) => {
-      // console.log(res.data)
+    axios.get("/api/questions")
+    .then((res) => {
+      console.log(res.data)
       setQuestions(res.data);
     });
   }, []);
-
-  function question(subject) {
-    return axios.get("/api/questions").then((res) => {
-      for (let data of res.data) {
-        // console.log(data);
-        if (subject === data.subject) {
-          console.log(data);
-        }
-      }
-    });
-  }
-
-  question('Traffic');
 
   const msgs = [
     "hey, whatsup!",
@@ -99,26 +87,23 @@ function App() {
         </div>
 
         {/* This is the main section */}
-        <MainBody questions={questions} setQuestionsPopUp={setQuestionsPopUp} />
+        <MainBody questions={questions} setQuestions={setQuestions} />
         {/* <div className="message-body">
         
       </div> */}
       </div>
 
-      <div className={questionsPopUp.style}>
+      {/* <div className={questionsPopUp.style}>
         <Questions
-          key={questionsPopUp.subject}
-          id={questionsPopUp.id}
-          question={questionsPopUp.question}
-          answer={questionsPopUp.answer}
-          subject={questionsPopUp.subject}
+          questionsPopUp={questionsPopUp}
           setQuestionsPopUp={setQuestionsPopUp}
+          getQuestion={getQuestion}
         />
-      </div>
+      </div> */}
 
       <div>
         {/* <ChatWindow /> */}
-        {/* <PopChat messages={msgs} getMessage={getMessage} /> */}
+        <PopChat messages={msgs} getMessage={getMessage} />
       </div>
     </div>
   );
