@@ -1,6 +1,7 @@
+// Imports
 import React from "react";
-
-import "../Styles/nav.css"
+import "../Styles/nav.css";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   return (
@@ -8,9 +9,12 @@ export default function Nav() {
       <div id="title">
         <h1>Pocket Lawyer</h1>
         <ul>
-          <li>SOS</li>
-          <li>Find Answers</li>
-          <li>Conversations</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+          <Link to="/sos">SOS</Link>
+          </li>
         </ul>
       </div>
       <div>
@@ -20,5 +24,5 @@ export default function Nav() {
         </ul>
       </div>
     </nav>
-  )
-};
+  );
+}
