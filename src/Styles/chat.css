@@ -16,13 +16,14 @@
 }
 
 .ce-active-chat-card {
-  background-color: #cabcdc !important;
-  border: 4px solid #cabcdc !important;
+  background-color: #1a62ff !important;
+  border: 4px solid #1a62ff !important;
   border-radius: 0px !important;
+  color: white;
 }
 
 .ce-chat-subtitle-text {
-  color: #595959 !important;
+  color: white !important;
 }
 
 .ce-chat-form-container {
@@ -31,12 +32,12 @@
 
 .ce-text-input {
   border-radius: 6px !important;
-  border: 1px solid #3b2a50 !important;
+  border: 1px solid #1a62ff !important;
 }
 
 .ce-primary-button {
   border-radius: 6px !important;
-  background-color: #7554a0 !important;
+  background-color: #1a62ff !important;
   position: relative;
   bottom: 1px;
 }
@@ -52,12 +53,12 @@
 
 .ce-autocomplete-input {
   border-radius: 6px !important;
-  border: 1px solid #3b2a50 !important;
+  border: 1px solid #1a62ff !important;
 }
 
 .ce-autocomplete-options {
   border-radius: 6px !important;
-  border: 1px solid #3b2a50 !important;
+  border: 1px solid #1a62ff !important;
   background-color: white !important;
 }
 
@@ -85,13 +86,13 @@
 }
 
 .chat-title {
-  color: #7554a0;
+  color: #1a62ff;
   font-weight: 800;
   font-size: 24px;
 }
 
 .chat-subtitle {
-  color: #7554a0;
+  color: #1a62ff;
   font-weight: 600;
   font-size: 12px;
   padding-top: 4px;
@@ -165,7 +166,7 @@
 .message-form {
   overflow: hidden;
   border-radius: 6px;
-  border: 1px solid #3b2a50;
+  border: 1px solid #1a62ff;
   background-color: white;
 }
 
@@ -218,8 +219,8 @@
 .wrapper {
   height: 100vh;
     width: 100%;
-  background: rgb(117,84,160);
-  background: linear-gradient(90deg, rgba(117,84,160,1) 7%, rgba(117,84,160,1) 17%, rgba(106,95,168,1) 29%, rgba(99,103,174,1) 44%, rgba(87,116,184,1) 66%, rgba(70,135,198,1) 83%, rgba(44,163,219,1) 96%, rgba(22,188,237,1) 100%, rgba(0,212,255,1) 100%);  
+  background: #1a62ff;
+  background: linear-gradient(90deg, #1a62ff 7%, #1a62ff 17%, #1a62ff 29%, #1a62ff 44%, rgba(87,116,184,1) 66%, rgba(70,135,198,1) 83%, rgba(44,163,219,1) 96%, rgba(22,188,237,1) 100%, rgba(0,212,255,1) 100%);  
   display: flex;
   justify-content: center;
   align-items: center;

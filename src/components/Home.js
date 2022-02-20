@@ -107,7 +107,7 @@ function App() {
 
       <div>
         {/* <ChatWindow /> */}
-        <PopChat messages={msgs} getMessage={getMessage} />
+        {/* <PopChat messages={msgs} getMessage={getMessage} /> */}
       </div>
     </div>
   );
