@@ -57,3 +57,9 @@ ul li {
   justify-content: center;
   flex-direction: row;
 }
+
+.userlogin {
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+}

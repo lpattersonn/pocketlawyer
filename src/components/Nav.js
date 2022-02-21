@@ -25,8 +25,9 @@ export default function Nav() {
       <div className="loginArea">
         <ul id="login">
           <li>Login</li>
-          <li>Register</li>
+          <li><img className="userlogin" src="https://tse4.mm.bing.net/th?id=OIP.I0rRw6lUEdvIGZ7sE54jMQHaDt&pid=Api&P=0&w=365&h=182" alt="userlogin"/></li>
         </ul>
+        
       </div>
     </nav>
   );
