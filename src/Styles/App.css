@@ -176,7 +176,6 @@ body {
 }
 
 .icon_area:hover {
-  background-color: rgb(235, 222, 51);
   border-color: honeydew;
   cursor: pointer;
 }
@@ -230,12 +229,7 @@ display: felx;
   margin-left: 2em;
   margin-right: 2em;
   border-radius: 25px;
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(77, 155, 164),
-    #1a62ff,
-    #8b3dff
-  );
+  background-color: rgb(240, 240, 240);
   overflow: auto;
 }
 
@@ -251,7 +245,9 @@ display: felx;
 }
 
 .faq_popup-article {
-  border: 1px solid white;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  background-color: white;
+  border-radius: 7px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
 }
