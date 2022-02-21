@@ -8,6 +8,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  box-shadow: 0 0 10px whitesmoke;
 }
 
 nav .logo {

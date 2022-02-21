@@ -29,13 +29,7 @@ function App() {
 
   const [questions, setQuestions] = useState([]);
 
-  const [questionsPopUp, setQuestionsPopUp] = useState({
-    id: "",
-    question: "",
-    answer: "",
-    subject: "",
-    style: "closePopUp",
-  });
+  const [box, setBox] = useState([]);
 
   const [lawyerPopUp, setLawyerPopUp] = useState({
     name: "",
@@ -54,10 +48,21 @@ function App() {
 
   useEffect(() => {
     axios.get("/api/questions").then((res) => {
-      console.log(res.data);
+     // console.log(res.data);
       setQuestions(res.data);
     });
   }, []);
+
+
+  useEffect(() => {
+    axios.get("https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=5c0d974942ec4e319ec0c5ac727587ad").then((res) => {
+      //console.log(res.data.articles);
+      setBox(res.data.articles);
+    });
+  }, []);
+
+  
+
 
   const msgs = [
     "hey, whatsup!",
@@ -91,19 +96,11 @@ function App() {
         </div>
 
         {/* This is the main section */}
-        <MainBody questions={questions} setQuestions={setQuestions} />
+        <MainBody questions={questions} setQuestions={setQuestions} box={box}/>
         {/* <div className="message-body">
         
       </div> */}
       </div>
-
-      {/* <div className={questionsPopUp.style}>
-        <Questions
-          questionsPopUp={questionsPopUp}
-          setQuestionsPopUp={setQuestionsPopUp}
-          getQuestion={getQuestion}
-        />
-      </div> */}
 
       <div>
         {/* <ChatWindow /> */}

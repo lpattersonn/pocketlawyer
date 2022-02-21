@@ -4,7 +4,7 @@ import Nav from "./Nav";
 import { ChatEngine } from "react-chat-engine";
 import "../Styles/chat.css";
 
-export default function Chat(porps) {
+export default function Chat(props) {
   return (
     <div>
       <Nav />

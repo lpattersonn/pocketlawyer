@@ -176,10 +176,10 @@ body {
 }
 
 .icon_area:hover {
-  background-color: rgb(235, 222, 51);
   border-color: honeydew;
   cursor: pointer;
-}
+  box-shadow: 0 0 10px white;
+ }
 
 .temp {
   position: fixed;
@@ -225,17 +225,13 @@ display: felx;
   z-index: 1;
   border: 1px solid black;
   width: 1460px;
-  height: 50%;
-  margin-top: 28em;
+  height: 53%;
+  margin-top: 26em;
   margin-left: 2em;
   margin-right: 2em;
+  /* padding-bottom: 5em; */
   border-radius: 25px;
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(77, 155, 164),
-    #1a62ff,
-    #8b3dff
-  );
+  background-color: rgb(240, 240, 240);
   overflow: auto;
 }
 
@@ -251,7 +247,36 @@ display: felx;
 }
 
 .faq_popup-article {
-  border: 1px solid white;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  background-color: white;
+  border-radius: 7px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+ justify-content: space-between;
+  margin: 2em;
+  height: 130%;
+}
+
+.box div {
+  width:32%;
+  height: 100%;
+  border: 1px solid grey;
+ border-radius: 25px;
+ /* padding: 10em; */
+ background-image: linear-gradient(
+    to bottom right,
+    rgb(77, 155, 164),
+    #1a62ff,
+    #8b3dff
+  );
+}
+
+.box img {
+  width: 60%;
+  height: 80%;
 }
