@@ -62,6 +62,7 @@ console.log(res.data)
           <Link to="/register">Register</Link>
             </li>
         </ul>
+        
       </div>
     </nav>
   );

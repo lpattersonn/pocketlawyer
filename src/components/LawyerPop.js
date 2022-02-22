@@ -22,7 +22,7 @@ export default function LawyerList(props) {
        <p>{props.description}</p>
       </div>
       <div class="btn-primary">
-      <button type="button" class="popup-btn">Contact Now</button>
+      <button type="button" class="popup-btn"><a href="/sos">Contact Now</a></button>
       </div>
       
     </section>
