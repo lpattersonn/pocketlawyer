@@ -24,7 +24,6 @@ export default function MainBody(props) {
     for (let val of result) {
       const questionsArray = questions.map((question, key) => {
         const result1 = question.subject.split(" ");
-       
 
         for (let valTwo of result1) {
           if (val.toLowerCase() === valTwo.toLowerCase()) {
@@ -152,19 +151,16 @@ export default function MainBody(props) {
     });
   };
 
-const boxData = props.box.map((data) => {
-return(
-<article>
-  <div>
-    <img src={data.urlToImage} />
-  </div>
-  </article>
-
-
-)
-})
-//  console.log(props.box)
-
+  const boxData = props.box.map((data) => {
+    return (
+      <article>
+        <div>
+          <img src={data.urlToImage} />
+        </div>
+      </article>
+    );
+  });
+  //  console.log(props.box)
 
   return (
     <section className="mainbody">
@@ -192,21 +188,87 @@ return(
           />
           {faq()}
         </form>
-
-        <div className="box">
-          <div>
-            <h1>Div 1</h1>
-            <img
-              className="icon_area"
-              alt="Family"
-              src="https://github.com/lpattersonn/pocketlawyer/blob/main/public/family.jpeg?raw=true"
-            />
+        <div className="box-content">
+          <h2 id="box-header">Legal Documents, Forms, and Contracts</h2>
+          <div className="box-div_two">
+            <div>
+              <h3>Business</h3>
+              <ul>
+                <li>Incorporation</li>
+                <li>Partnership Agreement</li>
+                <li>Confidentiality Agreement</li>
+                <li>
+                  <button className="popup-btn">
+                    See More Wills & Estates Documents
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Family</h3>
+              <ul>
+                <li>Separation Agreement</li>
+                <li>Prenuptial Agreement</li>
+                <li>Cohabitation Agreement</li>
+                <li>
+                  <button className="popup-btn">
+                    See More Family Documents
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div className="box-div">
+              <h3>Real Estate</h3>
+              <ul>
+                <li>Residential Lease Agreement</li>
+                <li>Business Lease (Commercial Lease)</li>
+                <li>Eviction Notice</li>
+                <li>
+                  <button className="popup-btn">
+                    See More Real Estate Documents
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div>
-            {/* {boxData} */}
-          </div>
-          <div>
-            <h1>Div 1</h1>
+          <div className="box">
+            <div>
+              <h3>Wills & Estates</h3>
+              <ul>
+                <li>Last Will and Testament</li>
+                <li>P.O.A. (Power of Attorney)</li>
+                <li>Living Will</li>
+                <li>
+                  <button className="popup-btn">
+                    See More Wills & Estates Documents
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3>Financial</h3>
+              <ul>
+                <li>Bill of Sale</li>
+                <li>Demand loan (Loan Agreement)</li>
+                <li>Promissory Note</li>
+                <li>
+                  <button className="popup-btn">
+                    See More Financial Documents
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div className="box-div">
+              <h3>Other</h3>
+              <ul>
+                <li>Affidavit</li>
+                <li>Letter of Intent</li>
+                <li>Release/Waiver Agreement</li>
+                <li>
+                  <button className="popup-btn">See All Other Documents</button>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
