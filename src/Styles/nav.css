@@ -58,3 +58,12 @@ ul li {
   justify-content: center;
   flex-direction: row;
 }
+
+.login div{
+  display: inline;
+  padding: 5px;
+}
+
+button {
+  width: 70px;
+}
