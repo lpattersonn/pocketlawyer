@@ -66,4 +66,9 @@ ul li {
 
 button {
   width: 70px;
+  height: 25px;
+}
+
+.login input {
+  height: 25px;
 }

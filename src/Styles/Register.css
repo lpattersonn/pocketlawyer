@@ -6,9 +6,18 @@
  flex-direction: column;
  border: 4px solid black;
  width: 60%;
- height:450px;
-  padding: 5em;
-  /* margin-bottom: 4em; */
+ height:620px;
+  padding-bottom: 5em;
+  padding-left: 5em;
+  padding-top: 2em;
+  margin-bottom: 4em;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(77, 155, 164),
+    #1a62ff,
+    #8b3dff
+  );
+  box-shadow: 10px 10px 10px rgb(98, 114, 167);
 
 
 }
@@ -16,8 +25,10 @@
  .register{
   display: flex;
   flex-direction: row;
-  padding: 10em;
+  padding: 5em;
   justify-content: center;
+  
+  
 }
 
 .register div{
@@ -26,6 +37,39 @@
 } 
 
 .register input {
-  width: 80%;
-  height: 30px;
+  width: 90%;
+  height: 40px;
 }
+
+
+.data p {
+  margin-left: 8em;
+  font-size: 40px;
+  font-weight: bold;
+}
+  
+.data label {
+  margin-right: 5em;
+  font-weight: bold;
+}
+
+
+.data input {
+  margin-right: 2em;
+  font-size: larger;
+}
+
+.data button {
+  margin-top: 0.7em;
+  margin-bottom: 3.5em;
+  width: 110px;
+  height: 40px;
+  font-weight: bold;
+  font-size: large; 
+
+}
+
+/* .email {
+  margin-right: 7em;
+  padding-left: 2em;
+} */

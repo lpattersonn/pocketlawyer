@@ -8,6 +8,7 @@ import axios from "axios";
 export default function Nav() {
   const [username, setusername] = useState("");
   const [password, setpassword] = useState("");
+  const [loginStatus, setloginStatus] = useState("");
 
   const login = () => {
     axios.post('/login', {
@@ -16,6 +17,7 @@ export default function Nav() {
     })
     .then((res) => {
 console.log(res.data)
+setloginStatus(res.data.message)
     })
   }
 
@@ -43,17 +45,23 @@ console.log(res.data)
             <form>
             <li className="login">
            
-           <div> <input   type="text" placeholder="Username.." 
+           <div> <input   className="myInput" type="text" placeholder="Username.." 
            onChange={(e) => {
             setusername(e.target.value);
           }}
            /> </div>
-           <div> <input type="password" placeholder="Password.." 
+           <div> <input className="myInput" type="password" placeholder="Password.." 
            onChange={(e) => {
             setpassword(e.target.value);
           }}
            /></div>
-           <div><button type="button" class="btn btn-light" onClick={login}>Login</button>  </div>
+           <div><button type="button" class="btn btn-light" 
+           onClick={() => {
+             {login()}
+             document.getElementsByClassName(
+              'myInput').value = ''
+            }}
+            >Login</button>  </div>
             </li>
             </form>
             </div>
@@ -62,6 +70,8 @@ console.log(res.data)
           <Link to="/register">Register</Link>
             </li>
         </ul>
+
+        <h1>{loginStatus}</h1>
         
       </div>
     </nav>
