@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import "../Styles/loginform.css"
 
 const projectID = "3c0dd3f9-55c8-417c-b8ae-63797659eaa8";
 
@@ -34,13 +35,13 @@ export default function LoginForm() {
 
   return (
     <div className="wrapper">
-      <div className="form">
-        <form onSubmit={handleSubmit}>
+      <div className="form_div">
+        <form className="loginForm" onSubmit={handleSubmit}>
           <input
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            className="input"
+            className="login_input"
             placeholder="Username"
             required
           />
@@ -48,12 +49,12 @@ export default function LoginForm() {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="input"
+            className="login_input"
             placeholder="Password"
             required
           />
           <div align="center">
-            <button type="submit" className="button">
+            <button type="submit" className="button_login">
               Login
             </button>
           </div>
