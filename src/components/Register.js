@@ -30,7 +30,7 @@ export default function Register(props) {
       <section className="register">
         <form className="form">
           <div className="data">
-          <p>Register</p>
+          
 
           <div>
             <label>First Name:</label>
@@ -68,7 +68,7 @@ export default function Register(props) {
           </div>
 
           <div>
-            <button type="button" class="btn btn-light" onClick={() => {
+            <button type="button" className="btn-reg" onClick={() => {
               {register()}
               navigate('/')
             }

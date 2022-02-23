@@ -14,13 +14,14 @@
   display:flex;
   flex-direction: column;
   /* border: 4px solid rgb(242, 238, 238); */
-  width: 40%;
-  height:375px;
-   padding-bottom: 5em;
+  width: 35%;
+  height:340px;
+   /* padding-bottom: 5em; */
    padding-left: 5em;
-   padding-top: 2em;
+   padding-right: 3em;
+   padding-top: 5em;
    margin-left:10em;
-   margin-bottom: 3em;
+   /* margin-bottom: 4em; */
    /* margin-top: 15em; */
    background-image: linear-gradient(
     to bottom right,
@@ -30,6 +31,7 @@
   );
   box-shadow: 10px 10px 10px rgb(98, 114, 167);
    margin-right: 30em; 
+   border-radius: 25px;
  }
  
   .loginMain{
@@ -67,23 +69,26 @@
  
  .loginMain .data input {
    margin-right: 2em;
+   margin-bottom: 1.2em;
    font-size: larger;
  }
  
  .loginMain .data button {
    margin-top: 0.7em;
-   margin-bottom: 3.5em;
-   margin-left: 11em;
+   /* margin-bottom: 3.5em; */
+   margin-left: 12em;
    width: 110px;
    height: 40px;
    font-weight: bold;
    font-size: large;  
+   border-radius: 15px;
  }
 
+ 
  .logo img {
   width: 350px;
   height: 300px;
-  margin-top: 6em;
-  margin-left: 50em;
+  margin-top: 6em;  
+  padding-left: 51em;
 }
  
