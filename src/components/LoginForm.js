@@ -35,6 +35,10 @@ export default function LoginForm() {
 
   return (
     <div className="wrapper">
+      <img
+          className="login_logo"
+          src="https://github.com/lpattersonn/pocketlawyer/blob/main/public/pocketlawyer.png?raw=true"
+        />
       <div className="form_div">
         <form className="loginForm" onSubmit={handleSubmit}>
           <input
