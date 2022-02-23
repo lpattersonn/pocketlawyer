@@ -60,7 +60,7 @@ export default function Register(props) {
           <div>
             <label>Password:</label>
             <input
-              type="text"
+              type="password"
               onChange={(e) => {
                 setpasswordReg(e.target.value);
               }}

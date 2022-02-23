@@ -8,7 +8,9 @@ import axios from "axios";
 export default function Nav() {
   const [username, setusername] = useState("");
   const [password, setpassword] = useState("");
-  const [loginStatus, setloginStatus] = useState("");
+  const [loginStatus, setloginStatus] = useState([]);
+
+  const [userNameShow, setUserNameShow] = useState("")
 
   const login = () => {
     axios.post('/login', {
@@ -16,10 +18,22 @@ export default function Nav() {
        password: password,
     })
     .then((res) => {
-console.log(res.data)
-setloginStatus(res.data.message)
+// console.log(res.data)
+setloginStatus(res.data)
     })
   }
+
+
+function getUser() {
+  return loginStatus.map((arr, key) => {
+    return (
+      key={key},
+<p>{arr.username}</p>
+    )
+  })
+}
+  
+
 
   return (
     <nav id="nav">
@@ -58,20 +72,24 @@ setloginStatus(res.data.message)
            <div><button type="button" class="btn btn-light" 
            onClick={() => {
              {login()}
-             document.getElementsByClassName(
-              'myInput').value = ''
+             
+              setUserNameShow(getUser())
             }}
             >Login</button>  </div>
+            
             </li>
             </form>
             </div>
-          
+          <li>
+          {userNameShow}
+          </li>
+            
           <li>
           <Link to="/register">Register</Link>
             </li>
         </ul>
-
-        <h1>{loginStatus}</h1>
+        
+       
         
       </div>
     </nav>
