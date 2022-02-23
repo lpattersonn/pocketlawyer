@@ -13,6 +13,8 @@ import Chat from "./components/Chat";
 
 import Home from "./components/Home";
 
+import Register from "./components/Register";
+
 function App() {
   return (
     // Routes
@@ -20,6 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sos" element={<Chat />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
   );

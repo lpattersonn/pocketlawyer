@@ -66,9 +66,12 @@
 
  .logreg {
    display:flex;
-   flex-direction: row;
+     flex-direction: row;
      justify-content: center;
-   padding-right: 5.5em;
+ }
+
+ .logreg div {
+   padding: 5px;
  }
  
  
