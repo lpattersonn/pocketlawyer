@@ -217,11 +217,11 @@ export default function MainBody(props) {
                 </li>
               </ul>
             </div>
-            <div className="box-div">
+            <div>
               <h3>Real Estate</h3>
               <ul>
                 <li>Residential Lease Agreement</li>
-                <li>Business Lease (Commercial Lease)</li>
+                <li>Business Lease</li>
                 <li>Eviction Notice</li>
                 <li>
                   <button className="popup-btn">
@@ -232,7 +232,7 @@ export default function MainBody(props) {
             </div>
           </div>
           <div className="box">
-            <div className="box_div">
+            <div>
               <h3>Wills & Estates</h3>
               <ul>
                 <li>Last Will and Testament</li>
@@ -258,7 +258,7 @@ export default function MainBody(props) {
                 </li>
               </ul>
             </div>
-            <div className="box-div">
+            <div className="div_box">
               <h3>Other</h3>
               <ul>
                 <li>Affidavit</li>
