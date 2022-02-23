@@ -22,6 +22,8 @@ import LawyerPop from "./LawyerPop";
 
 import Questions from "./Questions";
 
+import LoginForm from "./LoginForm";
+
 
 function App() {
   // State
@@ -62,15 +64,9 @@ function App() {
     });
   }, []);
 
-  
-
-
-  const msgs = [
-    "hey, whatsup!",
-    "how are you?",
-    "how is the weather today?",
-    "what is day today",
-  ];
+  if (!localStorage.getItem('username')) {
+    return <LoginForm />;
+  } else {
 
   //function to retrive the message to be sent
   const getMessage = (msg) => {
@@ -109,6 +105,7 @@ function App() {
       </div>
     </div>
   );
+    }
 }
 
 export default App;
