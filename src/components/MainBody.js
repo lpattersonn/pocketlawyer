@@ -232,7 +232,7 @@ export default function MainBody(props) {
             </div>
           </div>
           <div className="box">
-            <div>
+            <div className="box_div">
               <h3>Wills & Estates</h3>
               <ul>
                 <li>Last Will and Testament</li>

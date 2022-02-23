@@ -5,7 +5,7 @@
 }
 
 .box-content {
-  padding-top: 2%;
+  margin-top: -6%;
   padding-bottom: 0.5%;
   display: flex;
   justify-content: center;
@@ -13,13 +13,13 @@
 }
 
 .box {
-  display: flex;
   color: black;
+  margin: 1em;
+  height: 100%;
+  z-index: 1;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 1em;
-  height: 90%;
-  z-index: 1;
 }
 
 .box div {
@@ -39,24 +39,34 @@
 }
 
 .box-div_two {
-  display: flex;
   color: black;
-  flex-direction: row;
-  justify-content: space-between;
   margin: 1em;
   height: 90%;
   z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .box-div_two div {
   width: 32%;
-  height: 90%;
+  height: 100%;
   border-radius: 25px;
-  /* padding: 10em; */
   background-color: #f0f0f0;
-  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .box-div_two div:hover {
   box-shadow: 1px 3px #d6d5d5;
+}
+
+.box_div {
+  margin-left: 1px;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
