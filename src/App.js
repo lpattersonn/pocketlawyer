@@ -9,6 +9,8 @@ import Home from "./components/Home";
 
 import Register from "./components/Register";
 
+import Login from "./components/Login";
+
 function App() {
   return ( 
     // Routes
@@ -18,7 +20,7 @@ function App() {
           <Route path="/sos" element={<Chat />} />
           {/* <Route path="/login" element={<login />} /> */}
           <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<login />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </Router>
   )
