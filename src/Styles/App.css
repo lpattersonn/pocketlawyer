@@ -17,9 +17,9 @@ body {
 }
 
 .title {
-  font-family: "Bungee", cursive;
+  font-family: sans-serif;
   /* font-family: 'Shizuru', cursive; */
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .multicolortext {
@@ -72,7 +72,7 @@ body {
   /* height: 100%; */
   margin-top: 1.7em;
   width: 20%;
-  height: 970px;
+  height: 1100px;
   /* border: 1px solid grey; */
   overflow: auto;
   /* max-height: 800px;
@@ -133,7 +133,7 @@ body {
   );
   /* background-color: #61dafb; */
   width: 100%;
-  height: 39%;
+  height: 30%;
   margin: 1.3em;
 }
 
@@ -144,9 +144,9 @@ body {
   width: 60%;
   /* padding-right: 40px; */
   padding-left: 17%;
-  margin-top: 50px;
-  margin-left: 120px;
-  margin-bottom: 100px;
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-bottom: 130px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -155,18 +155,16 @@ body {
     flex-direction: row;
     justify-content: center;
     width: 60%;
-    /* padding-right: 40px; */
     padding-left: 3.4%;
     margin-top: 50px;
-    margin-left: 120px;
+    margin-left: 130px;
     margin-bottom: 100px;
   }
 }
 
 .icons div {
   width: 70%;
-
-  padding-left: 70px;
+  padding-left: 38px;
 }
 
 .icon_area {
@@ -176,7 +174,6 @@ body {
   width: 70px;
   height: 70px;
   z-index: 1;
-
   opacity: 1;
   animation-name: fadeInOpacity;
   animation-iteration-count: 1;
@@ -249,8 +246,8 @@ display: felx;
 
 .faq-body_disappear {
   position: fixed;
-  width: 1px;
-  height: 1px;
+  width: 0px;
+  height: 0px;
   opacity: 0%;
   z-index: 0;
 }
