@@ -11,12 +11,7 @@
   padding-left: 5em;
   padding-top: 2em;
   margin-bottom: 4em;
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(77, 155, 164),
-    #1a62ff,
-    #8b3dff
-  );
+  background-color: rgb(242, 238, 238);
   box-shadow: 10px 10px 10px rgb(98, 114, 167);
 
 
@@ -27,12 +22,19 @@
   flex-direction: row;
   padding: 5em;
   justify-content: center;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(77, 155, 164),
+    #1a62ff,
+    #8b3dff
+  );
   
   
 }
 
 .register div{
   margin: 1em;
+  
 
 } 
 

@@ -18,6 +18,7 @@ function App() {
           <Route path="/sos" element={<Chat />} />
           {/* <Route path="/login" element={<login />} /> */}
           <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<login />} />
         </Routes>
       </Router>
   )
