@@ -74,6 +74,7 @@ export default function Nav() {
             </li>
             <li onClick={logout}>
               <a href="#">Logout</a>
+              <Link to="/sos">SOS</Link>
             </li>
           </ul>
         </div>
