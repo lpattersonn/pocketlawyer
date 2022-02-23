@@ -24,7 +24,7 @@ import Questions from "./Questions";
 
 import LoginForm from "./LoginForm";
 
-
+// App function
 function App() {
   // State
   const [lawyers, setLawyers] = useState([]);
