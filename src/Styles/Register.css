@@ -14,8 +14,6 @@
   margin-bottom: 4em;
   background-color: rgb(242, 238, 238);
   box-shadow: 10px 10px 10px rgb(98, 114, 167);
-
-
 }
 
  .register{
@@ -28,16 +26,12 @@
     rgb(77, 155, 164),
     #1a62ff,
     #8b3dff
-  );
-  
-  
+  ); 
 }
 
-.register div{
+.register div {
   margin: 1em;
-  
-
-} 
+ } 
 
 .register input {
   width: 90%;

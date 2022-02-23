@@ -63,6 +63,13 @@
    margin-right: 5em;
    font-weight: bold;
  }
+
+ .logreg {
+   display:flex;
+   flex-direction: row;
+     justify-content: center;
+   padding-right: 5.5em;
+ }
  
  
  .loginMain .data input {
@@ -74,7 +81,7 @@
  .loginMain .data button {
    margin-top: 0.7em;
    /* margin-bottom: 3.5em; */
-   margin-left: 12em;
+   /* margin-left: 12em; */
    width: 110px;
    height: 40px;
    font-weight: bold;
