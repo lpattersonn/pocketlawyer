@@ -80,13 +80,22 @@ type="password"
             />
           </div>
 
-          <div>
+          <div className="logreg">
+           <div>
           <button type="submit" >
               Login
              </button>
+             </div>
+             <div>
+             <button className="leftBtn" >
+              Signup
+             </button>
+            </div>
           </div>
+          
           </div>
         </form>
+
 <h1>{error}</h1>
       </section>
       </div>
