@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
-import "../Styles/loginform.css"
+import "../Styles/loginform.css";
+import "../Styles/Login.css";
 
 const projectID = "3c0dd3f9-55c8-417c-b8ae-63797659eaa8";
 
@@ -58,9 +59,17 @@ export default function LoginForm() {
             required
           />
           <div align="center">
-            <button type="submit" className="button_login">
+            {/* <button type="submit" className="button_login">
               Login
-            </button>
+            </button> */}
+            <div className="logreg">
+                <div>
+                  <button type="submit" className="button_login">Login</button>
+                </div>
+                <div>
+                  <button className="button_login"><a href="/register">Signup</a></button>
+                </div>
+              </div>
           </div>
         </form>
         <h1>{error}</h1>

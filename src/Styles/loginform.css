@@ -2,7 +2,10 @@
 
 .wrapper {
   width: 100%;
-  background: white;
+  background-image: url("https://github.com/lpattersonn/pocketlawyer/blob/main/public/photo-1513530534585-c7b1394c6d51.jpeg?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,10 +26,22 @@
   outline: none;
 }
 
+.login_input:hover {
+  box-shadow: 1px 3px #d6d5d5;
+}
+
 .form_div {
-  border: 1px solid #d6d5d5;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(77, 155, 164),
+    #1a62ff,
+    #8b3dff
+  );
+  box-shadow: 10px 10px 10px rgb(98, 114, 167);
   border-radius: 25px;
   background-color: #f0f0f0;
+  margin-right: 25%;
+  margin-bottom: 14%;
 }
 
 .loginForm {
@@ -55,9 +70,15 @@
   box-shadow: 1px 3px #d6d5d5;
 }
 
+.button_login a {
+  text-decoration: none;
+  color: white;
+}
+
 .login_logo {
   width: 200px;
   height: 150px;
   margin-top: 5%;
   margin-bottom: 20px;
+  margin-left: 300px;
 }
