@@ -39,7 +39,7 @@ Pocket Lawyer is a web application that allow users to connect to lawyers, in re
    ```
 3. Clone the repo for scheduler-api
    ```sh
-   git clone https://github.com/lpattersonn/pocketlawyer-api.git
+   git clone https://github.com/Adnan-Raja/pocketlawyer-api
    ```
 4. Install NPM packages for scheduler-api
    ```sh
