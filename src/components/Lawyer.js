@@ -32,7 +32,9 @@ export default function Lawyer(props) {
 // Lawyer list Section 
   return (
     <section id="side-bar">
-      <h4> {lawyerCount} Lawyers Online</h4>
+      <h4> {lawyerCount} Lawyers Online <br />
+      Choose A Lawyer
+      </h4>
       
      {lawyerList}
      
