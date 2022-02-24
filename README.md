@@ -2,17 +2,20 @@
 
 ## About The Project
 
-Interview Scheduler is a modern client application built using the React view library. Interview Scheduler is built using the latest tools and techniques. A concise API with a WebSocket server was used to build a realtime experience.
+Pocket Lawyer is a web application that allows users to connect to lawyers, in real time, and find legal information.
 
-![app home page](https://github.com/lpattersonn/scheduler/blob/master/public/images/scheduler3.png?raw=true)
+![app home page](https://github.com/lpattersonn/pocketlawyer/blob/main/public/homepage.png?raw=true)
+![app message page](https://github.com/lpattersonn/pocketlawyer/blob/main/public/home1.png?raw=true)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
 
 - [React](https://reactjs.org/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Express](http://expressjs.com/)
+- [Node.js](https://nodejs.org/en/)
 - [Webpack](https://reactjs.org/)
-- [Babel](https://reactjs.org/)
 - [Axios](https://reactjs.org/)
 - [WebSockets](https://reactjs.org/)
 - [Webpack Dev Server](https://reactjs.org/)
@@ -27,7 +30,7 @@ Interview Scheduler is a modern client application built using the React view li
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/lpattersonn/scheduler.git
+   git clone https://github.com/lpattersonn/pocketlawyer.git
    ```
 2. Install NPM packages
    ```sh
@@ -35,7 +38,7 @@ Interview Scheduler is a modern client application built using the React view li
    ```
 3. Clone the repo for scheduler-api
    ```sh
-   git clone https://github.com/lpattersonn/scheduler-api.git
+   git clone https://github.com/lpattersonn/pocketlawyer-api.git
    ```
 4. Install NPM packages for scheduler-api
    ```sh
@@ -70,9 +73,13 @@ Don't forget to give the project a star! Thanks again!
 
 ## Contact
 
+Adnan Saeed - [@adnan-saeed](https://ca.linkedin.com/in/adnan-saeed)
+
+Adeyemi Atayero - [@adeyemi-atayero](https://ca.linkedin.com/in/adeyemi-atayero)
+
 Leshan Patterson - [@lpatters](https://ca.linkedin.com/in/lpatters)
 
-Project Link: [https://github.com/scheduler.git](https://github.com/lpattersonn/scheduler.git)
+Project Link: [https://github.com/scheduler.git](https://github.com/lpattersonn/pocketlawyer.git)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

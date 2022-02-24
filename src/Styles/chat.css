@@ -12,7 +12,7 @@
 }
 
 .ce-chats-container {
-  background-color: rgb(240, 240, 240) !important;
+  background-color: rgb(230, 230, 230) !important;
 }
 
 .ce-active-chat-card {
@@ -133,7 +133,6 @@
   object-fit: cover;
   border-radius: 6px;
   height: 30vw;
-  /* width: 30vw; */
   max-height: 200px;
   max-width: 200px;
   min-height: 100px;
