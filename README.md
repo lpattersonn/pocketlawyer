@@ -79,7 +79,7 @@ Adnan Saeed - [@adnan-saeed](https://ca.linkedin.com/in/adnan-saeed)
 
 Adeyemi Atayero - [@adeyemi-atayero](https://ca.linkedin.com/in/adeyemi-atayero)
 
-Leshan Patterson - [@lpatters](https://ca.linkedin.com/in/lpatters)
+Leshan Patterson - [@lpattersonn](https://ca.linkedin.com/in/lpatters)
 
 Project Link: [https://github.com/scheduler.git](https://github.com/lpattersonn/pocketlawyer.git)
 
