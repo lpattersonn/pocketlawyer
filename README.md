@@ -5,6 +5,7 @@
 Pocket Lawyer is a web application that allow users to connect to lawyers, in real time, and find legal information.
 
 ![app home page](https://github.com/lpattersonn/pocketlawyer/blob/main/public/homepage.png?raw=true)
+
 ![app message page](https://github.com/lpattersonn/pocketlawyer/blob/main/public/home1.png?raw=true)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
