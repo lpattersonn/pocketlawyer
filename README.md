@@ -75,7 +75,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## Contact
 
-Adnan Saeed - [@adnan-saeed](https://ca.linkedin.com/in/adnan-saeed)
+Adnan Saeed - [@adnan-saeed-raja](https://ca.linkedin.com/in/adnan-saeed-raja)
 
 Adeyemi Atayero - [@adeyemi-atayero](https://ca.linkedin.com/in/adeyemi-atayero)
 
