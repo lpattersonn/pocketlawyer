@@ -2,9 +2,10 @@
 
 ## About The Project
 
-Pocket Lawyer is a web application that allows users to connect to lawyers, in real time, and find legal information.
+Pocket Lawyer is a web application that allow users to connect to lawyers, in real time, and find legal information.
 
 ![app home page](https://github.com/lpattersonn/pocketlawyer/blob/main/public/homepage.png?raw=true)
+
 ![app message page](https://github.com/lpattersonn/pocketlawyer/blob/main/public/home1.png?raw=true)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -38,7 +39,7 @@ Pocket Lawyer is a web application that allows users to connect to lawyers, in r
    ```
 3. Clone the repo for scheduler-api
    ```sh
-   git clone https://github.com/lpattersonn/pocketlawyer-api.git
+   git clone https://github.com/Adnan-Raja/pocketlawyer-api
    ```
 4. Install NPM packages for scheduler-api
    ```sh
@@ -56,6 +57,7 @@ Pocket Lawyer is a web application that allows users to connect to lawyers, in r
 <p align="right">(<a href="#top">back to top</a>)</p>
 <!-- ROADMAP -->
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
@@ -73,11 +75,11 @@ Don't forget to give the project a star! Thanks again!
 
 ## Contact
 
-Adnan Saeed - [@adnan-saeed](https://ca.linkedin.com/in/adnan-saeed)
+Adnan Saeed - [@adnan-saeed-raja](https://ca.linkedin.com/in/adnan-saeed-raja)
 
 Adeyemi Atayero - [@adeyemi-atayero](https://ca.linkedin.com/in/adeyemi-atayero)
 
-Leshan Patterson - [@lpatters](https://ca.linkedin.com/in/lpatters)
+Leshan Patterson - [@lpattersonn](https://ca.linkedin.com/in/lpatters)
 
 Project Link: [https://github.com/scheduler.git](https://github.com/lpattersonn/pocketlawyer.git)
 
