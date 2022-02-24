@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Pocket Lawyer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About The Project
 
-## Available Scripts
+Pocket Lawyer is a web application that allow users to connect to lawyers, in real time, and find legal information.
 
-In the project directory, you can run:
+![app home page](https://github.com/lpattersonn/pocketlawyer/blob/main/public/homepage.png?raw=true)
 
-### `npm start`
+![app message page](https://github.com/lpattersonn/pocketlawyer/blob/main/public/home1.png?raw=true)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Built With
 
-### `npm test`
+- [React](https://reactjs.org/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Express](http://expressjs.com/)
+- [Node.js](https://nodejs.org/en/)
+- [Webpack](https://reactjs.org/)
+- [Axios](https://reactjs.org/)
+- [WebSockets](https://reactjs.org/)
+- [Webpack Dev Server](https://reactjs.org/)
+- [Jest](https://reactjs.org/)
+- [Testing Library](https://reactjs.org/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### `npm run build`
+<!-- GETTING STARTED -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repo
+   ```sh
+   git clone https://github.com/lpattersonn/pocketlawyer.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm i
+   ```
+3. Clone the repo for scheduler-api
+   ```sh
+   git clone https://github.com/Adnan-Raja/pocketlawyer-api
+   ```
+4. Install NPM packages for scheduler-api
+   ```sh
+   npm i
+   ```
+5. In a seperate terminal while in the cloned scheduler-api project directory enter the following command
+   ```sh
+   npm start
+   ```
+6. In your terminal while in the cloned scheduler project directory enter the following command
+   ```sh
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="right">(<a href="#top">back to top</a>)</p>
+<!-- ROADMAP -->
+<!-- CONTRIBUTING -->
 
-### `npm run eject`
+## Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- CONTACT -->
 
-## Learn More
+## Contact
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Adnan Saeed - [@adnan-saeed-raja](https://ca.linkedin.com/in/adnan-saeed-raja)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Adeyemi Atayero - [@adeyemi-atayero](https://ca.linkedin.com/in/adeyemi-atayero)
 
-### Code Splitting
+Leshan Patterson - [@lpattersonn](https://ca.linkedin.com/in/lpatters)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Project Link: [https://github.com/scheduler.git](https://github.com/lpattersonn/pocketlawyer.git)
 
-### Analyzing the Bundle Size
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- ACKNOWLEDGMENTS -->
