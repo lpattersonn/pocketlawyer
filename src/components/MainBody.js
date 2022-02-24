@@ -186,6 +186,7 @@ export default function MainBody(props) {
             value={searchInput.search}
             onChange={getInputVal}
           />
+          <h3>Quick Search</h3>
           {faq()}
         </form>
         <div className="box-content">
