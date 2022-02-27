@@ -53,7 +53,11 @@ Pocket Lawyer is a web application that allow users to connect to lawyers, in re
    ```sh
    npm start
    ```
-
+7. On the login page enter the provided username and password to login.
+   ```sh
+   username: Walter
+   password: 1234
+   ```
 <p align="right">(<a href="#top">back to top</a>)</p>
 <!-- ROADMAP -->
 <!-- CONTRIBUTING -->
