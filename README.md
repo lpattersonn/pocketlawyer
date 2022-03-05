@@ -83,7 +83,7 @@ Adnan Saeed - [@adnan-saeed-raja](https://ca.linkedin.com/in/adnan-saeed-raja)
 
 Adeyemi Atayero - [@adeyemi-atayero](https://ca.linkedin.com/in/adeyemi-atayero)
 
-Leshan Patterson - [@lpattersonn](https://ca.linkedin.com/in/lpatters)
+Leshan Patterson - [@lpattersonn](https://ca.linkedin.com/in/lpattersonn)
 
 Project Link: [https://github.com/lpattersonn/pocketlawyer.git](https://github.com/lpattersonn/pocketlawyer)
 
